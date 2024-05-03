@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <!-- ===BOOTSTRAP CDN LINKS=== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+        </script>
+
+    <!-- <script src="script.js"></script> -->
+
+
+
+    <!-- ===FONT-AWESOME CDN LINKS=== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- ----navbar--- -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-2">
+        <div class="container">
+            <a href="index.html" class="navbar-brand d-flex justify-content-center align-items-center order-lg-0">
+                <img src="/images/game-cart-logo.png" alt="Mylogo" class="me-2" style="width: 30px; height: 30px;">
+                <span class="text-capitalize">Game Cart</span>
+            </a>
+            <div class="order-lg-2 button-group">
+                <a href="#" class="btn " role="button">
+                    <span class="">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </span>
+                </a>
+                <a href="#" class="btn" role="button">
+                    <span class="">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                </a>
+                <a href="#" class="btn" role="button">
+                    <span class="">
+                        <i class="fa-solid fa-user"></i>
+                    </span>
+                </a>
+            </div>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item  px-2 py-2 me-3 ">
+                        <a href="index.html" class="nav-link text-dark">Home</a>
+                    </li>
+                    <li class="nav-item  px-2 py-2 me-3 ">
+                        <a href="game.html" class="nav-link text-dark active" aria-current="page">Games</a>
+                    </li>
+                    <li class="nav-item px-2 py-2 me-3 ">
+                        <a href="about.html" class="nav-link text-dark">About Us</a>
+                    </li>
+                    <li class="nav-item px-2 py-2 me-3 ">
+                        <a href="#" class="nav-link text-dark">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ---navbar end--- -->
+
+    <!-- ---Breadcrumb--- -->
+    <section class="breadcrumb-section py-2">
+        <div class="container d-flex justify-content-center py-2 mt-2">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Games</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <!-- ---End of breadcrumb--- -->
+
+    <!-- ---Header section--- -->
+    <section class="collection-section py-5">
+        <header class="header-menu py-5">
+            <div class="container">
+                <div class="menu-bar d-flex justify-content-around align-items-center">
+                    <div class="input-group">
+                        <div class="input-group-text">
+                            <span class="position-absolute icon-append">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                        </div>
+                        <input type="search" class=" position-relative form-control rounded-5"
+                            placeholder="Search games...">
+                        <div class="input-group-text">
+                            <span class="position-absolute icon-preppend">
+                                <i class="fa-solid fa-microphone"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- ---End of header section--- -->
+        <!-- ---Collection section---- -->
+        <div class="container">
+            <div class="button-group text-center mt-3 filter-button-group">
+                <button type="button" class="btn btn-outline-danger rounded-5 me-2 " data-filter="*">All</button>
+                <button type="button" class="btn btn-outline-danger rounded-5 me-2 "
+                    data-filter=".trend">Trending</button>
+                <button type="button" class="btn btn-outline-danger rounded-5 me-2 " data-filter=".rated">Top
+                    Rated</button>
+            </div>
+            <div class="collection mt-4">
+                <div class="row mt-2 gx-2 gy-2">
+                    <div class="col-md-6 col-lg-4 col-xl-3 trend">
+                        <div class="card">
+                            <img src="/images/astroneer.jpeg" class="card-img-top" alt="astroneer">
+                            <div class="card-footer">
+                                <h4>Astroneer</h4>
+                                <p class="text-capitalize lead">system era softworks</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 rated">
+                        <div class="card">
+                            <img src="/images/everspace2.jpeg" class="card-img-top" alt="astroneer">
+                            <div class="card-footer">
+                                <h4>Everspace 2</h4>
+                                <p class="text-capitalize lead"><span class="text-uppercase">rockfish</span> games</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 trend">
+                        <div class="card">
+                            <img src="/images/fallout 76.jpg" class="card-img-top" alt="astroneer">
+                            <div class="card-footer">
+                                <h4>Fallout 76-PC</h4>
+                                <p class="text-capitalize lead">bethesda softworks</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 rated">
+                        <div class="card">
+                            <img src="/images/generation zero.jpg" class="card-img-top" alt="astroneer">
+                            <div class="card-footer">
+                                <h4>Generation Zero</h4>
+                                <p class="text-capitalize lead">systemic reaction</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 trend">
+                        <div class="card">
+                            <img src="/images/halo infinite.jpg" class="card-img-top" alt="astroneer">
+                            <div class="card-footer">
+                                <h4>Halo Infinite</h4>
+                                <p class="text-capitalize lead">system era softworks</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 rated">
+                        <div class="card">
+                            <img src="/images/call of duty-img2.jpeg" class="card-img-top" alt="astroneer">
+                            <div class="card-footer">
+                                <h4>Call Of Duty</h4>
+                                <p class="text-capitalize lead"><span class="text-uppercase">rockfish</span> games</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 trend">
+                        <div class="card">
+                            <img src="/images/overwatch-2-invasion-img2.webp" class="card-img-top" alt="astroneer">
+                            <div class="card-footer">
+                                <h4>Overwatch</h4>
+                                <p class="text-capitalize lead">bethesda softworks</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 rated">
+                        <div class="card">
+                            <img src="/images/stray-game-img2.jpg" class="card-img-top img-fluid" alt="astroneer">
+                            <div class="card-footer">
+                                <h4>Stray</h4>
+                                <p class="text-capitalize lead">systemic reaction</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 trend">
+                        <div class="card">
+                            <img src="/images/star field-img2.jpg" class="card-img-top" alt="astroneer">
+                            <div class="card-footer">
+                                <h4>Star Field</h4>
+                                <p class="text-capitalize lead">system era softworks</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 rated">
+                        <div class="card">
+                            <img src="/images/expanse-img2.jpeg" class="card-img-top" alt="astroneer">
+                            <div class="card-footer">
+                                <h4>The Expanse</h4>
+                                <p class="text-capitalize lead"><span class="text-uppercase">rockfish</span> games</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 trend">
+                        <div class="card">
+                            <img src="/images/pes-img2.jpg" class="card-img-top" alt="astroneer">
+                            <div class="card-footer">
+                                <h4>PES</h4>
+                                <p class="text-capitalize lead">GameCart games</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 rated">
+                        <div class="card">
+                            <img src="/images/valorant-img.jpg" class="card-img-top" alt="astroneer">
+                            <div class="card-footer">
+                                <h4>Valorant</h4>
+                                <p class="text-capitalize lead">Riot Games</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---End of collection section---- -->
+
+    <!-- ---Footer section--- -->
+    <footer>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-sm-6 col-lg-4 col-xl-3">
+                    <div class="browse px-4 mt-4">
+                        <div class="head">
+                            <h4 class="text-uppercase fw-bold">browse</h4>
+                        </div>
+                        <ul class="list-unstyled mt-3">
+                            <li class="mt-2">
+                                <a href="#" class="text-decoration-none text-muted">GameCart Console</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="text-decoration-none text-muted">GameCart Games</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="text-decoration-none text-muted">GameCart Game Pass</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="text-decoration-none text-muted ">GameCart Accessories</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3">
+                    <div class="resources px-4 mt-4">
+                        <div class="head">
+                            <h4 class="text-uppercase fw-bold">resources</h4>
+                        </div>
+                        <ul class="list-unstyled mt-3">
+                            <li class="mt-2">
+                                <a href="#" class="text-decoration-none text-muted">GameCart Support</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="text-decoration-none text-muted">Feedback</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="text-decoration-none text-muted">Community Standards</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="text-decoration-none text-muted ">Photosensitive Seizure warning</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3">
+                    <div class="microsoft px-4 mt-4">
+                        <div class="head">
+                            <h4 class="text-uppercase fw-bold">Microsoft Store</h4>
+                        </div>
+                        <ul class="list-unstyled mt-3">
+                            <li class="mt-2">
+                                <a href="#" class="text-decoration-none text-muted">Microsoft Account</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="text-decoration-none text-muted">Microsoft Store Support</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="text-decoration-none text-muted">Returns</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="text-decoration-none text-muted">Orders Tracking</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3">
+                    <div class="developers px-4 mt-4">
+                        <div class="head">
+                            <h4 class="text-uppercase fw-bold">for developers</h4>
+                        </div>
+                        <ul class="list-unstyled mt-3">
+                            <li class="mt-2">
+                                <a href="#" class="text-decoration-none text-muted">Games</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="text-decoration-none text-muted">ID@GameCart </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="text-decoration-none text-muted">Windows</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="text-decoration-none text-muted">Creators Program</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="socialMedia-section d-flex justify-content-center">
+                <div class="box mt-4 ">
+                    <h3 class="text-capitalize">Follow us on</h3>
+
+                    <ul class="list-unstyled d-flex justify-content-center">
+                        <li>
+                            <a href="" class="text-decoration-none  fs-4 me-4" style="color: grey;">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="text-decoration-none fs-4 me-4" style="color: grey;">
+
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="text-decoration-none fs-4 me-4" style="color: grey;">
+
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ---End of footer section--- -->
+
+
+    <!-- ---isotope filter cdn--- -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- Your HTML code -->
+
+<script src="path/to/isotope.pkgd.min.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var grid = document.querySelector('.collection');
+        var iso = new Isotope(grid, {
+            itemSelector: '.col-md-6', // Adjust this selector based on your item structure
+            layoutMode: 'fitRows' // or 'masonry' depending on your layout
+        });
+
+        var filterButtons = document.querySelectorAll('.filter-button-group button');
+        filterButtons.forEach(function (button) {
+            button.addEventListener('click', function () {
+                var filterValue = this.getAttribute('data-filter');
+                iso.arrange({ filter: filterValue });
+            });
+        });
+    });
+</script>
+
+
+
+
+</body>
+
+</html>

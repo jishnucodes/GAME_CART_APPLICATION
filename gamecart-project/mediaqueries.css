@@ -1,0 +1,91 @@
+@media screen and (min-width:768px) {
+    .navbar li {
+        border-bottom: 1px solid rgba(245, 233, 233, 0.979);
+    }
+
+
+
+}
+
+@media screen and (max-width:575px) {
+
+    .card .content {
+        display: none;
+    }
+
+    .card .mediaSmall h2 {
+
+        font-family: 'Kaisei Tokumin', serif;
+        font-size: 40px;
+
+    }
+
+}
+
+@media screen and (min-width:576px) {
+    .card .mediaSmall {
+        display: none;
+    }
+
+    .card .content h2 {
+        font-size: 48px;
+        margin-left: 182px;
+        padding-left: 0;
+        margin-right: 0;
+    }
+
+}
+
+@media screen and (min-width:768px) {
+    .card .mediaSmall {
+        display: none;
+    }
+
+    .card .content h2 {
+        font-size: 52px;
+        margin-left: 17px;
+        padding-left: 57px;
+    }
+
+}
+
+@media screen and (min-width:992px) {
+    .card .mediaSmall {
+        display: none;
+    }
+
+    .card .content h2 {
+        font-size: 52px;
+        margin-left: 0;
+        padding-right: 0px;
+        margin-right: -148px;
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+    .card .mediaSmall {
+        display: none;
+    }
+
+    .card .content h2 {
+        font-size: 52px;
+        margin-left: 0;
+        margin-right: -160px;
+        padding-right: 0px;
+    }
+
+}
+
+@media screen and (min-width:1400px) {
+    .card .mediaSmall {
+        display: none;
+    }
+
+    .card .content h2 {
+        font-size: 52px;
+        margin-left: 0px;
+        margin-right: -78px;
+        padding-right: 0px;
+    }
+}

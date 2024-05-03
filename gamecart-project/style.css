@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
+:root{
+   box-sizing: border-box;
+    --lg-font: 'Kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+    --white: #fff;
+    --green: #00ff00;
+}
+body{
+    font-family: var(--sm-font);
+}
+.img img:hover{
+   transform: scale(1.15);
+   transition: 0.5s ease-out;
+   
+}
+/* ---navbar styling--- */
+ .navbar{
+    box-shadow: 0 3px 9px 3px rgba(0,0,0,0.12);
+ }
+ .navbar-brand span{
+    font-family: var(--lg-font);
+ }
+ .navbar li{
+    font-family: var(--sm-font);
+    font-size: 17px;
+    letter-spacing: 1px;
+ }
+ /* .navbar li:hover ::before{
+    position: absolute;
+    content: "";
+    background-color: black;
+    width: 58px;
+    height: 1px;
+    bottom: 12px;
+    left: 15px;
+ } */
+ .navbar li:hover {
+    transform: scale(1.15);
+    transition: 0.5s ease-in-out;
+ }
+ .button-group a:hover{
+   transform: scale(1.15);
+ }
+
+/* ---end of navbar--- */
+
+/* ---Home styling--- */
+
+.intro-1{
+   background-image: url(/images/bg-img-1.jpg);
+   height: 70vh;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+
+}
+.intro-2{
+   background-image: url(/images/bg-img-3.jpg);
+   height: 70vh;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+
+}
+.intro-3{
+   background-image: url(/images/bg-img-2.jpg);
+   height: 70vh;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.btn-warning{
+   padding: 3px 5px !important;
+   width: 150px !important;
+}
+.btn-success{
+   background-color: var(--green) !important;
+   color: black !important;
+   font-weight: bold !important;
+}
+.header{
+   color: var(--white);
+   font-family: var(--lg-font);
+   font-size: 40px;
+   line-height: 20px;
+}
+.carousel-inner p{
+   color: var(--white);
+   font-family: var(--sm-font);
+   font-size: 25px;
+   line-height: 40px;
+}
+/* ---End of Home styling--- */
+/* ---section-1 styling--- */
+
+.part-a{
+   background-image: url(/images/cod-img.jpg);
+   background-position: center;
+   background-size: cover;
+   height: 100vh;
+}
+.part-a .header{
+   font-family: var(--lg-font);
+   font-size: 20px;
+}
+.part-a p{
+   color: var(--white);
+}
+ .section-header{
+   color: var(--white);
+   font-family: var(--lg-font);
+}
+.section-header h1{
+   font-size: 25px;
+}
+.part-b{
+   background-image: url(/images/xbox\ gamestick-img.jpg);
+   background-position: center;
+   background-size: cover;
+   height: 100vh;
+}
+.part-b-header{
+   color: black;
+   font-family: var(--lg-font);
+}
+.part-b p{
+   font-family: var(--sm-font);
+}
+.learn-btn{
+   color: black !important;
+   font-weight: bold !important;
+}
+/* ---End of section-1--- */
+/* ---section-2 styling--- */
+
+.section-2 .xbox-content{
+   background-image: url(/images/xbox\ speaker\ and\ joy\ stick-img.jpg);
+   background-position: center;
+   background-size: cover;
+   height: 90vh;
+}
+/* ---End of section-2--- */
+/* ---section-3 styling--- */
+
+/* ---End of section-3--- */
+
+/* ---section-4styling--- */
+
+
+/* ---End of section-4--- */
+
+/* ---Footer stylimg--- */
+footer{
+   background-color: aliceblue;
+}
+footer li a{
+   font-size: 10px;
+   
+
+}
+footer .head h4{
+   font-size: 15px;
+
+}
+/* ---End of footer styling--- */
+
+
+/* ---Games section--- */
+.breadcrumb-section{
+   box-shadow: 0 3px 9px 3px rgba(0,0,0,0.12);
+
+}
+.header-menu .menu-bar .input-group-text{
+   border: none;
+   background:transparent;
+}
+.header-menu .menu-bar .input-group-text .icon-append{
+   left: 32px;
+   z-index: 5555;
+}
+.header-menu .menu-bar input{
+   padding: 8px 40px;
+}
+.header-menu .menu-bar .input-group-text .icon-preppend{
+   z-index: 5555;
+   right: 44px;
+}
+.collection-section{
+   /* background: black; */
+}
+.collection .card .card-footer{
+   background: green;
+   color: white;
+}
+/* ---End of game section--- */
